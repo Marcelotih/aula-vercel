@@ -1,10 +1,10 @@
-import React, { useState } from 'react'; // Adicionado o { useState } aqui!
+import React, { useState } from 'react';
 
 
-import HomeScreen from './screens/Homescreen';     // Corrigido: era ../screens
-import AboutScreen from './screens/Aboutscreen';   // Corrigido: era ../screens
-import StackScreen from './screens/Stackscreen';   // Corrigido: era ../screens
-import ContactScreen from './screens/Contactscreen'; // Corrigido: era ../screens
+import HomeScreen from './screens/Homescreen';  
+import AboutScreen from './screens/Aboutscreen';   
+import StackScreen from './screens/Stackscreen';   
+import ContactScreen from './screens/Contactscreen'; 
 import './App.css';
 
 export default function App() {

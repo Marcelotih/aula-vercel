@@ -1,9 +1,9 @@
 import React from 'react';
 import { colors, radius } from '../theme';
-import profile from '../assets/profile.jpg'; // Importação da imagem adicionada!
+import profile from '../assets/profile.jpg'; 
 
 export default function HomeScreen({ setActiveTab }) {
-  // Criamos uma função interna para evitar erros caso setActiveTab não venha
+  
   const handleNavigate = (tabName) => {
     if (setActiveTab) {
       setActiveTab(tabName);

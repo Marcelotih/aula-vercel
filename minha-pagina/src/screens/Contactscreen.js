@@ -102,7 +102,7 @@ const styles = {
     boxSizing: 'border-box',
   },
   content: {
-    maxWidth: '600px', // Limita a largura para ficar elegante na web
+    maxWidth: '600px',
     margin: '0 auto',
     paddingLeft: spacing.lg,
     paddingRight: spacing.lg,

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { colors } from '../theme';
 
-import HomeScreen from '../screens/HomeScreen';
-import AboutScreen from '../screens/AboutScreen';
-import StackScreen from '../screens/StackScreen';
-import ContactScreen from '../screens/ContactScreen';
+import HomeScreen from '../screens/Homescreen';
+import AboutScreen from '../screens/Aboutscreen';
+import StackScreen from '../screens/Stackscreen';
+import ContactScreen from '../screens/Contactscreen';
 
 function TabButton({ label, focused, onClick }) {
   return (
@@ -27,11 +27,11 @@ function TabButton({ label, focused, onClick }) {
 export default function AppNavigator() {
   const [activeTab, setActiveTab] = useState('Home');
 
-  // Define qual tela renderizar com base no estado
+ 
  const renderScreen = () => {
   switch (activeTab) {
     case 'Home':
-      // Passamos a função setActiveTab como propriedade aqui:
+      
       return <HomeScreen setActiveTab={setActiveTab} />;
     case 'About':
       return <AboutScreen setActiveTab={setActiveTab} />;
@@ -46,12 +46,12 @@ export default function AppNavigator() {
 
   return (
     <div style={styles.container}>
-      {/* Área do conteúdo da tela atual */}
+      
       <main style={styles.content}>
         {renderScreen()}
       </main>
 
-      {/* Barra de Navegação Inferior (Tab Bar) */}
+      
       <nav style={styles.tabBar}>
         <TabButton
           label="início"
@@ -88,7 +88,7 @@ const styles = {
   },
   content: {
     flex: 1,
-    paddingBottom: '80px', // Garante que a TabBar não cubra o fim do conteúdo
+    paddingBottom: '80px', 
     boxSizing: 'border-box',
   },
   tabBar: {
@@ -101,11 +101,11 @@ const styles = {
     justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: 'rgba(8,8,16,0.97)',
-    backdropFilter: 'blur(10px)', // Efeito de desfoque moderno no fundo (opcional)
+    backdropFilter: 'blur(10px)',
     borderTop: '1px solid rgba(108,99,255,0.18)',
     height: '64px',
     boxSizing: 'border-box',
-    zIndex: 1000, // Garante que fique sempre acima do conteúdo
+    zIndex: 1000,
   },
   tabButton: {
     background: 'none',
