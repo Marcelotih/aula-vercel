@@ -33,7 +33,7 @@ const sections = [
 export default function StackScreen() {
   return (
     <div className="section">
-      <div className="section-tag">// skills</div>
+      <div className="section-tag"> skills</div>
       <h2 className="section-title">Minha Stack</h2>
 
       {sections.map((section, si) => (

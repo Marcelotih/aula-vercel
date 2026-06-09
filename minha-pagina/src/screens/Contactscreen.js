@@ -68,7 +68,7 @@ export default function ContactScreen() {
             transition: 'opacity 0.5s ease, transform 0.5s ease',
           }}
         >
-          <p style={styles.tag}>// contato</p>
+          <p style={styles.tag}> contato</p>
           <h1 style={styles.title}>Vamos conversar</h1>
 
           <div style={styles.card}>

@@ -10,7 +10,7 @@ const cards = [
 export default function AboutScreen() {
   return (
     <div className="section">
-      <div className="section-tag">// sobre mim</div>
+      <div className="section-tag"> sobre mim</div>
       <h2 className="section-title">Quem sou eu</h2>
       <p className="about-body">
         Sou o Marcelo Augusto, desenvolvedor backend e front focado em Java e Spring Boot e react.
