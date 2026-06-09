@@ -5,10 +5,22 @@ import profile from '../assets/profile.jpg';
 export default function HomeScreen({ setActiveTab }) {
   
   const handleNavigate = (tabName) => {
-    if (setActiveTab) {
+  if (setActiveTab) {
+    // Força o nome da aba a ir para o App.js em minúsculo
+    const formattedTab = tabName.toLowerCase();
+    
+    // Tratamento caso a palavra seja "Home" ou "Início"
+    if (formattedTab === 'home' || formattedTab === 'inicio') {
+      setActiveTab('Home'); // Ou 'inicio', dependendo de como está o seu switch no App.js
+    } else if (formattedTab === 'stack') {
+      setActiveTab('Stack'); // Ajusta para bater com o case 'Stack' do seu App.js
+    } else if (formattedTab === 'contact' || formattedTab === 'contato') {
+      setActiveTab('Contact'); // Ajusta para bater com o case 'Contact' do seu App.js
+    } else {
       setActiveTab(tabName);
     }
-  };
+  }
+};
 
   return (
     <div style={styles.hero}>
