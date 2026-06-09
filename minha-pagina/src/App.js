@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; // Adicionado o { useState } aqui!
-import { colors } from './theme'; // Corrigido: era ../theme
+
 
 import HomeScreen from './screens/Homescreen';     // Corrigido: era ../screens
 import AboutScreen from './screens/Aboutscreen';   // Corrigido: era ../screens
