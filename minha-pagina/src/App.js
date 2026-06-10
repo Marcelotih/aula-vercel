@@ -10,8 +10,9 @@ import './App.css';
 export default function App() {
   const [page, setPage] = useState('home');
 
-  const screens = {
-    home: <HomeScreen navigate={setPage} />,
+ const screens = {
+    
+    home: <HomeScreen setActiveTab={setPage} />, 
     about: <AboutScreen />,
     stack: <StackScreen />,
     contact: <ContactScreen />,
